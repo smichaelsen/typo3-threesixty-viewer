@@ -1,0 +1,15 @@
+page.includeJS.tx_threesixtyviewer = EXT:threesixty_viewer/Resources/Public/Javascript/threesixty.min.js
+page.includeCSS.tx_threesixtyviewer = EXT:threesixty_viewer/Resources/Public/Stylesheets/threesixty.css
+
+plugin.tx_threesixtyviewer {
+	view {
+		templateRootPaths.0 = {$plugin.tx_threesixtyviewer.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_threesixtyviewer.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_threesixtyviewer.view.layoutRootPath}
+	}
+}
+
+[globalVar = LIT:1 = {$plugin.tx_threesixtyviewer.includeJQuery}]
+	page.includeJSlibs.jQuery = //code.jquery.com/jquery-2.1.3.js
+	page.includeJSlibs.jQuery.external = 1
+[global]

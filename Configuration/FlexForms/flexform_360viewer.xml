@@ -1,0 +1,35 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:threesixty_viewer/Resources/Private/Language/locallang_be.xlf:flexforms_default.tab</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.imageset>
+						<TCEforms>
+							<label>LLL:EXT:threesixty_viewer/Resources/Private/Language/locallang_be.xlf:flexforms_default.imageset</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>sys_file_collection</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>1</minitems>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms>
+					</settings.imageset>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

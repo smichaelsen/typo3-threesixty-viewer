@@ -1,0 +1,9 @@
+plugin.tx_threesixtyviewer {
+	# cat=plugin.tx_tx_threesixtyviewer/file; type=boolean; label=Include jQuery:This extension required jQuery, please enable this option if jQuery is *not* already included in your site.
+	includeJQuery = 0
+	view {
+		templateRootPath = EXT:threesixty_viewer/Resources/Private/Templates/
+		partialRootPath = EXT:threesixty_viewer/Resources/Private/Partials/
+		layoutRootPath = EXT:threesixty_viewer/Resources/Private/Layouts/
+	}
+}

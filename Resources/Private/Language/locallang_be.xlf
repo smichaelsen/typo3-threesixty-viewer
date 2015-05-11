@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="product_finder">
+		<header/>
+		<body>
+			<trans-unit id="flexforms_default.tab" xml:space="preserve">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="flexforms_default.imageset" xml:space="preserve">
+				<source>Image Set</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
