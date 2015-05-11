@@ -1,0 +1,5 @@
+{
+	"name": "app-zap/threesixty-viewer",
+	"description": "Plugin to display 360° images",
+	"type": "typo3-cms-extension"
+}
