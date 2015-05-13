@@ -3,29 +3,43 @@
 <f:section name="main">
 
 	<script type="text/javascript">
-		var itemcount_{data.uid} = {itemcount};
-		var folder_{data.uid} = '{folder}';
-		var prefix_{data.uid} = '{prefix}';
-		var fileExtension_{data.uid} = '{fileExtension}';
 		<![CDATA[
-
 		(function ($) {
+			]]>
+			var itemcount = {itemcount};
+			var folder = '{folder}';
+			var prefix = '{prefix}';
+			var fileExtension = '{fileExtension}';
+			var viewer;
+			<![CDATA[
 			$(function () {
-				$('.viewer_]]>{data.uid}<![CDATA[').ThreeSixty({
-					totalFrames: itemcount_]]>{data.uid}<![CDATA[,
-					endFrame: itemcount_]]>{data.uid}<![CDATA[,
-					currentFrame: 1,
-					imgList: '.threesixty_images',
-					progress: '.spinner',
-					imagePath: folder_]]>{data.uid}<![CDATA[,
-					filePrefix: prefix_]]>{data.uid}<![CDATA[,
-					ext: fileExtension_]]>{data.uid}<![CDATA[,
-					navigation: true,
-					responsive: true
-				});
+				var viewerElement = $('.viewer_]]>{data.uid}<![CDATA[');
+				var initializeViewer = function(){
+					viewer = viewerElement.ThreeSixty({
+						totalFrames: itemcount,
+						endFrame: itemcount,
+						currentFrame: 1,
+						imgList: '.threesixty_images',
+						progress: '.spinner',
+						imagePath: folder,
+						filePrefix: prefix,
+						ext: fileExtension,
+						navigation: true,
+						responsive: true
+					});
+				};
+				var reInitializeViewer = function() {
+					viewer.responsive();
+				};
+				if ($().deferredInitialization) {
+					viewerElement.deferredInitialization(initializeViewer, reInitializeViewer);
+				} else {
+					initializeViewer();
+				}
 			});
 		}(jQuery));
-		]]></script>
+		]]>
+	</script>
 
 	<div class="threesixty viewer_{data.uid}">
 		<div class="spinner">
